@@ -8,7 +8,6 @@ int size = int.Parse(Console.ReadLine());
 int[] arr = new int [size];
 
 NewMass(arr);
-Console.WriteLine();
 Console.Write(ReadMass(arr));
 
 void NewMass(int[] array)
@@ -16,7 +15,6 @@ void NewMass(int[] array)
     for (int i = 0; i < array.Length; i++)
     {
         array[i] = new Random().Next(0, 100);
-        Console.Write($"{array[i]} ");
     }
 }
 
